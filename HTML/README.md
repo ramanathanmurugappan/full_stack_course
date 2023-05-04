@@ -113,7 +113,7 @@ ipsum dolor sit, amet consectetur adipisicingLorem <br>elit. Fugit non, necessit
 > ## Image
 >syntax
 <br>
-> `<img src”include directory of photos or hyperlink to photo alt=“name of the photo or link”>`
+> `<img src”include directory of photos or hyperlink to photo alt="name of the photo or link">`
 
 **example** 
 ```html
