@@ -75,11 +75,12 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis earu
 <hr>
 ipsum dolor sit, amet consectetur adipisicingLorem <br>elit. Fugit non, necessitatibus, quis assumenda<hr> incidunt iste est molestias enim earum dolor sequi? Temporibus hic quia fuga quis dolores rerum, officia delectus tempore molestias, minima deleniti suscipit. Nobis earum dolores odit a necessitatibus suscipit sed assumenda, aperiam qui obcaecati debitis repellendus nihil.
 <hr>
+
 > ## Tag
 
 | `<div>` | `<span>`| `<article>` |
 |:----------:|:----------:|:----------:|
-| consume high memory | onsume less memory than `<div>` | consume low memory than `<span>` |
+| consume high memory | consume less memory than `<div>` | consume low memory than `<span>` |
 | include heading,sub-heading,image and content |  includes sub-heading,image and content | includes sub-heading and content|
 | exclude nothing | excludes heading| excludes images and heading |
 
