@@ -4,6 +4,7 @@
 - Inline
 - Internal
 - External
+>Notes: inline style has the highest priority, and will override external and internal styles and browser defaults
 
 
 | Inline | Internal| External |
@@ -12,14 +13,20 @@
 | size will be larger take more data load html |  size will be larger take more data load html | size will be small and take less data to load html (developer and company prefer this)|
 | [inline.htm](./inline.htm)| [internal.htm](./internal.htm)| html - [external.htm](./external.htm), css - [style.css](./style.css)|
 
->Notes: there is no comments in css
+
+>Notes: CSS comment is starts with /* and ends with */
+```css
+/* This is a comment */
+```
+
+
 
 ## CSS selector
 - Id -> `#` --> cannot be used more than 4 to 5 times of different tag like h1,h2,h3
 - Class -> `.` --> can be used multiple times
 - Tag
 
-**example**
+**example - [style.css](./style.css)**
 
 id 
 
@@ -43,7 +50,7 @@ class
 
 protocol
 
-no protocol for id
+no protocol for id 
 
     in css
     p#r1{color:green;}-->wrong
@@ -53,7 +60,7 @@ no protocol for id
 
 
 ## Background
-- color
+- color - [style.css](./style.css)
 - image
 - repeat
 - position 

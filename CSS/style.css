@@ -1,24 +1,16 @@
 p{color:blue;
-    font-size: 100px;}
+    font-size: 20px;text-align: center;}
 /* automatically clear the next sibling after a floating element */
 #r1{color:green;}
 #r2{color:orange;}
-.r3{color:yellow;}
+.r3{color:black;}
 .r4{color:gray;}
 h1.r5{color:violet;}
-body{background-color: red; opacity: 0.3;}/*opacity range from 0 to 1*/
-body{background-color:rgba(255, 255, 255, 0.1);}
-body{background-image: url("image.jpeg");
-     background-repeat: no-repeat;
-     background-position: right bottom;
-     /*background-attachment: scroll;*/
-    background-attachment: fixed;}
+body {
+  background-color: lightgoldenrodyellow;
+}
 
 
-h1.dotted{border-style: dotted;}
-h1.dotted{border-style: solid;}
-h1.dotted{border-style: dashed;}
-h1.dotted{border-style: double;}
-h1.dotted{border-style: hidden;}
-h1.dotted{border-style: groove;}
+
+
 
