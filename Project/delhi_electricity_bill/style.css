@@ -1,0 +1,103 @@
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    }
+.center {
+    text-align: center ;
+    margin-bottom: 0;
+    margin-top: 30px;
+    }
+.center_bottom{
+    text-align: center ;
+    margin-bottom: 0;
+    margin-top: 0;
+    }
+p.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+    margin-right: 60px;
+    }
+p.due_date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-right: 20px;
+    padding: 5px 40px 20px 40px;
+    background-color: orange;
+}
+table.detail_table{
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+    }
+td.first_column{
+    text-align: left;
+}
+td.first_column{
+    text-align: left;
+}
+td.empty_col{width: 0; height: 20px; }
+
+
+table.Sanctioned_table{
+    width: 270px;
+
+    margin-top: -350px;
+    margin-left: 815px;
+    
+    }
+table.ca{
+    margin-top: -155px;
+    width: 220px;
+    
+    }
+td.td_ca{
+    font-size: 20px;
+}
+td.ca_table_Energisation_font{
+    font-size: 11;
+}
+td.ca_table_font{
+    font-size: 13px;
+}
+table.traffic_table{
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 815px;
+    
+}
+p.Customer_Care_Centre_No{
+    text-align: center ;
+    width: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-top: 450px;
+    margin-right: 22px;
+    padding: 3px 50px 0px 50px;
+    background-color: orange;
+}
+
+table.meter_table{
+    width: 1750px;
+    margin-top: 80px;
+    margin-left: 20px;
+    border: 1px solid black;
+    background-color: lightgrey;
+    border-collapse: collapse;
+    
+}
+td.meter_reading_table_empty_row{width: 0; height: 60px; background-color: white;}
