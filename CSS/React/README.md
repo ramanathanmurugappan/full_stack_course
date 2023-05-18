@@ -20,6 +20,11 @@ To uninstall run this command:
 ```shell
 npm uninstall -g create-react-app
 ```
+
+To install react latest
+```shell
+npm i react@latest react-dom@latest
+```
 create react project 
 ```shell
 npx create-react-app first_project
@@ -28,4 +33,19 @@ Run the React Application
 
 ```shell
 npm start
+```
+
+## Function
+
+```javascript
+import React from 'react';
+const  Greet=()=>{
+    return(<>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    </>
+    )
+}
+
+export default Greet;
 ```
