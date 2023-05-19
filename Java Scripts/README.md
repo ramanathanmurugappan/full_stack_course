@@ -31,12 +31,12 @@ Variables are containers for storing data (storing data values).
 |:----------:|:----------:|:----------:|
 | Numbers |max 50677|```let a=4;```|
 | string |  alpha numeric  | ```let name="Ram96";```|
-| Bigint| greater than 50677|```let t=true;```|
-| Boolean | true or false |  ```const classes={name:"Ram",course:"FSD"}``` |
+| Bigint| greater than 50677||
+| Boolean | true or false |```let t=true;```  |
 | undefined | multiple datatype| |
 | null | null value | |
 | symbol | special character||
-| object | array matrix list |   |
+| object | array matrix list |  ```const classes={name:"Ram",course:"FSD"}```  |
 
 - The Object Datatype
 
