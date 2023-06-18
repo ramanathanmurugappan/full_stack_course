@@ -1,0 +1,47 @@
+<html>
+    <body>
+            <script>
+            n=parseInt(prompt("Enter 1 if you want to login ","<br>","Enter 2 if you want to visit the website <br>"));
+            document.write("Enter 1 to go for the login page","<br>")
+            document.write("Enter 2 to go for the website view","<br>")
+            var a=document.getElementsByName("t1");
+            a=parseInt(a);
+            if(a==1){
+                document.write("hello");
+            }
+            </script>
+              <h2>Login</h2>
+              <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+              
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+              
+                <input type="button" value="Login" onclick="login()">
+              </form>
+    </body>
+</html>
+
+
+<!-- <html>
+<head>
+  <title>Login Page</title>
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      // Do something with the username and password values
+      // For example, you can perform validation or send them to a server for authentication
+      
+      // Display the values in the console
+      console.log("Username: " + username);
+      console.log("Password: " + password);
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html> -->

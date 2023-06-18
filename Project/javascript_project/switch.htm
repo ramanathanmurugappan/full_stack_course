@@ -1,0 +1,38 @@
+
+<html>
+<head>
+  <title>Select 1 or 2</title>
+</head>
+<body>
+
+  <script>
+    const choice = prompt("Enter 1 to login Page\nEnter 2 to visit the website");
+
+    switch (choice) {
+        case "1":login();break;
+        case "2":visitWebsite();break;
+        default:document.write("Check the Number");break;
+      }
+
+    function login() {
+      document.write('<h1>Login Page</h1>');
+      document.write('<form>');
+      document.write('  <label for="username">Username:</label>');
+      document.write('  <input type="text" id="username" name="username"><br><br>');
+      document.write('  <label for="password">Password:</label>');
+      document.write('  <input type="password" id="password" name="password"><br><br>');
+      document.write('  <input type="submit" value="Submit" onclick="visitWebsite(username.value, password.value)">');
+      document.write('</form>');
+    }
+
+    function visitWebsite(username, password) {
+    document.write("Welcome to the website!<br>");
+      if (username && password) {
+        document.write('<h1>Username: ' + username + '</h1>');
+        document.write('<h1>Password: ' + password + '</h1>');
+      }
+    }
+  </script>
+
+</body>
+</html>

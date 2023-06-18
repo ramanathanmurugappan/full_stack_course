@@ -136,3 +136,28 @@ examplle
 </script>
 
 ```
+array
+collection of homogenoius datatypes
+
+```html
+<html>
+    <body>
+         <p id="fruits"> </p>
+         <script>
+            let fruits=['apple','mango','grapes']
+            document.getElementById("fruits").innerHTML=fruits
+        </script>    
+    </body>
+</html>
+```
+DOM-Document object model
+
+BOM-Browser object model
+
+## switch
+## bit-wise operator
+ 
+remainder binary loop
+
+
+
