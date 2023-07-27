@@ -29,6 +29,13 @@ create react project
 ```shell
 npx create-react-app first_project
 ```
+
+If Above code Not working 
+
+```shell
+cd /usr/local/bin
+sudo npx create-react-app /Users/ram/Desktop/code/git/full_stack_course/React/react_reboot
+```
 Run the React Application
 
 ```shell
@@ -49,3 +56,13 @@ const  Greet=()=>{
 
 export default Greet;
 ```
+
+
+return type of constructor is void 
+
+sudo chown -R ram /Users/ram/Desktop/code/git/full_stack_course/React
+
+chmod -R 755 /Users/ram/Desktop/code/git/full_stack_course/React
+
+
+

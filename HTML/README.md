@@ -1,8 +1,9 @@
 ># **HTML5** notes
->## **format is .htm(new version html5) not .html(older version html<=4)**
->## **Not case sensitive**
+>## **File format is .html or .htm, not .htm5 or .html5**
+>## **HTML is not case sensitive**
 
 # Content
+- [Comments](#comments)
 - [Basic HTML file](#loream)
 - [Formatting](#formatting)
 - [Headings](#Headings)
@@ -13,6 +14,25 @@
     - [Radio,Checkbox and alert button](#radiocheckbox-and-alert-button)
     - [File](#file)
     - [Date,color and background style](#datecolor-and-background-style)
+
+
+>## Comments
+>HTML comments begin with `<!--` and end with `-->`. They are not displayed in the user's browser but they are visible in the source code. Comments can be used to leave notes or explanations about the HTML code.
+>
+>**example**
+>```html
+><html>
+>    <body>
+>        <!-- This is a comment -->
+>        <p>This is a paragraph.</p>
+>    </body>
+><html>
+>```
+>**output**
+><hr>
+><p>This is a paragraph.</p>
+><hr>
+
 
 >## Loream
 >### syntax

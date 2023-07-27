@@ -1,0 +1,6 @@
+- application level middleware - game(age)
+- router level middleware - server engineer can visit the servers
+- error handling middleware - try exc ept
+- builtin middleware - bios (cross os not possible/firewall)
+- third party middle ware - antivirus
+- 
