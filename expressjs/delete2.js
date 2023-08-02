@@ -1,7 +1,3 @@
-
-
-
-
 const mongodb=require('mongodb');
 const dbConnect=require('./mongodb')
 const express=require('express');
