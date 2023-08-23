@@ -1,0 +1,15 @@
+<p>interpolation works!</p>
+Employee Name:<input type="'text" value="{{employee.name}}"/><br/>
+Employee salary:<input type="'text" value="{{employee.salary}}"/><br/>
+Employee id:<input type="'text" value="{{employee.empid}}"/><br/>
+
+
+<h1>Property binding</h1>
+Employee Name:<input type="'text" #txt1 [value]="employee.name" (keyup)="setframe(txt1.value)"/><br/>
+Employee salary:<input type="'text" [value]="employee.salary"/><br/>
+Employee id:<input type="'text" [value]="employee.empid"/><br/>
+
+<h1>ng Model</h1>
+Employee Name:<input type="'text" #txt1 [value]="employee.name" [(ngModel)]="employee.name"/><br/>
+Employee salary:<input type="'text" [value]="employee.salary"/><br/>
+Employee id:<input type="'text" [value]="employee.empid"/><br/>
