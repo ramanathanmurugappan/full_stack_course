@@ -2,18 +2,29 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #chat-container {
-    border: 1px solid #000; /* Black border */
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    transform: translateY(90%);
+    transition: transform 0.3s;
+    border: 1px solid #000;
     border-radius: 5px;
     width: 300px;
     padding: 10px;
     background-color: #f7f7f7;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* Adding a subtle shadow for depth */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+#chat-title {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
 }
 
 #chat-log {
@@ -22,18 +33,30 @@ body, html {
     border: 1px solid #ccc;
     padding: 5px;
     font-size: 10px;
-    margin-bottom: 10px; /* Added to give some space between the chat log and the input */
+    margin-bottom: 10px;
 }
 
 #user-input {
     width: 86%;
     padding: 5px;
-    margin-bottom: 5px; /* Added to give some space between the input and the button */
+    margin-bottom: 5px;
 }
 
 .chat-image {
     max-width: 100%;
-    max-height: 300px; /* same as the height of the chat-log */
+    max-height: 300px;
     display: block;
-    margin: 0 auto; /* centering the image */
+    margin: 0 auto;
+}
+
+#toggle-chat {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    background-color: #f7f7f7;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
