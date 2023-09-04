@@ -12,7 +12,12 @@ import { SubmitComponent } from './submit/submit.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { LodashComponent } from './lodash/lodash.component';
 // import { HttpClientModule } from '@angular/common/http';
-import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/transloco';
+import { TranslocoModule, TRANSLOCO_CONFIG, translocoConfig } from '@ngneat/transloco';
+import { ConstructorComponent } from './constructor/constructor.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
+import { TranslationComponent } from './translation/translation.component';
+
 
 
 
@@ -26,16 +31,29 @@ import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/tran
     SubmitComponent,
     LodashComponent,
     InterpolationComponent,
+    ConstructorComponent,
+    TranslocoModule,
+    TranslationComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    TranslocoModule
+    TranslocoModule,
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [
-
+    {
+      provide: TRANSLOCO_CONFIG,
+      useValue: translocoConfig({
+        availableLangs: ['en', 'fr'],
+        defaultLang: 'en',
+        reRenderOnLangChange: true,
+        prodMode: true,
+      }),
+    },
   ],
   bootstrap: [AppComponent]
 })

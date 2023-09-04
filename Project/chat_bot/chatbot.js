@@ -38,7 +38,7 @@ function handleImageUpload() {
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = function (e) {
         chatLog.innerHTML += `<div>User: <img src="${e.target.result}" class="chat-image"></div>`;
         determineImageColor(e.target.result);
     };
@@ -49,7 +49,7 @@ function determineImageColor(imgData) {
     const image = new Image();
     image.src = imgData;
 
-    image.onload = function() {
+    image.onload = function () {
         const canvas = document.createElement('canvas');
         canvas.width = image.width;
         canvas.height = image.height;
@@ -60,20 +60,20 @@ function determineImageColor(imgData) {
         const uniqueColors = new Set();
 
         for (let i = 0; i < imageData.length; i += 4) {
-            const colorString = `${imageData[i]},${imageData[i+1]},${imageData[i+2]}`;
+            const colorString = `${imageData[i]},${imageData[i + 1]},${imageData[i + 2]}`;
             uniqueColors.add(colorString);
             if (uniqueColors.size > 3) break;
         }
 
         const colorDescriptions = ["", "Monochrome", "Bicolor", "Tricolor", "Multicolor"];
         const colorDescription = colorDescriptions[uniqueColors.size];
-        
+
         chatLog.innerHTML += `<div>Bot: This is a ${colorDescription} image.</div>`;
     };
 }
 
 function handleColorSubmission() {
-    const chosenColor = colorInput.value; 
+    const chosenColor = colorInput.value;
     chatLog.innerHTML += `<div>User: ${chosenColor}</div>`;
     chatLog.innerHTML += `<div>Bot: You chose the color ${chosenColor}</div>`;
 }

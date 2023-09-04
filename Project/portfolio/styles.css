@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.page-loading_start {
+    --size-w: 12.5rem;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #b7ab98;
+    border-radius: 4.375rem;
+    box-shadow: none;
+    color: #b7ab98;
+    display: flex;
+    height: 2.875rem;
+    justify-content: center;
+    margin-top: 20px;
+    outline: none;
+    text-transform: uppercase;
+    transition: background-color .6s cubic-bezier(.165, .84, .44, 1), color .6s cubic-bezier(.165, .84, .44, 1);
+    width: var(--size-w);
+}
+
+.body-text,
+.sub-content {
+    font-size: .875rem;
+    line-height: 180%;
+}
+
+.body-text,
+.display,
+.h1,
+.h2,
+.h3,
+.h4,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Avant Garde', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+button {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.layer_red {
+    --size: 0px;
+    background: #eb5939;
+    left: 0;
+    WebkitMaskImage: url(assets/icons/test-mask.svg);
+    maskImage: url(assets/icons/test-mask.svg);
+    WebkitMaskOrigin: content-box;
+    maskOrigin: content-box;
+    WebkitMaskPosition: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
+    maskPosition: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
+    WebkitMaskRepeat: no-repeat;
+    maskRepeat: no-repeat;
+    WebkitMaskSize: var(--size), contain;
+    maskSize: var(--size), contain;
+    minHeight: 100%;
+    pointerEvents: none;
+    position: absolute;
+    top: 0;
+    zIndex: 5;
+}
