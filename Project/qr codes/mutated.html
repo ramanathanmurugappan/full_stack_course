@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" id="qr-input" placeholder="Enter text">
+    <button onclick="generateQR()">Generate QR Code</button>
+    <img id="qrcode" src="" alt="Generated QR Code" style="display:none;">
+
+    <script>
+        function generateQR() {
+            const textInput = document.getElementById("qr-input").value;
+            const qrCodeImage = document.getElementById("qrcode");
+            const apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(textInput)}`;
+            
+            qrCodeImage.src = apiUrl;
+            qrCodeImage.style.display = "block"; // Show the image
+        }
+    </script>
+</body>
+
+</html>

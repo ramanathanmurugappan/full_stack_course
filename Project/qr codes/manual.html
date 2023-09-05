@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html></html>
+<body>
+    <input type="text" id="qr-input" placeholder="text">
+    <button onclick="func()">Generate QR Code</button>
+    <div id="qrcode"></div>
+
+    <script>
+        function func() {
+            const textInput = document.getElementById("qr-input").value;
+            const qrCodeElement = document.getElementById("qrcode");
+            const qr = new QRCode(qrCodeElement, textInput);
+            qr.make();
+        }
+        class QRCode {
+            constructor(element, text) {
+                this.element = element;
+                this.text = text;
+                this.qrCode = this.createQRCode();
+            }
+
+            createQRCode() {
+                const qrCode = [];
+                for (let i = 0; i < this.text.length; i++) {
+                    qrCode.push(this.text.charCodeAt(i).toString(2));
+                }
+
+                return qrCode;
+            }
+
+            make() {
+                const table = document.createElement("table");
+                table.classList.add("qrcode-table");
+                for (const row of this.qrCode) {
+                    const tr = document.createElement("tr");
+                    for (const cell of row) {
+                        const td = document.createElement("td");
+                        if (cell === "1") {
+                            td.classList.add("black");
+                        }
+                        tr.appendChild(td);
+                    }
+                    table.appendChild(tr);
+                }
+                this.element.innerHTML = "";
+                this.element.appendChild(table);
+            }
+        }
+    </script>
+
+    <style>
+        .qrcode-table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .qrcode-table td {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #a71515;
+        }
+        .black {
+            background-color: #9b1e1e;
+        }
+    </style>
+</body>
+</html>
